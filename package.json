@@ -1,0 +1,25 @@
+{
+  "name": "Uber-Cloning",
+  "version": "1.0.0",
+  "description": "clone-coding",
+  "main": "index.js",
+  "repository": "https://github.com/jxxh-div/Uber-Cloning.git",
+  "author": "JaeHwan <ahhancom@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "graphql-yoga": "^1.18.3",
+    "helmet": "^4.1.1",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "@types/node": "^14.11.8",
+    "nodemon": "^2.0.4",
+    "ts-node": "^9.0.0",
+    "tslint-config-prettier": "^1.18.0",
+    "typescript": "^4.0.3"
+  },
+  "scripts": {
+    "start": "cd src && nodemon --exec ts-node index.ts -e ts,graphql"
+  }
+}
