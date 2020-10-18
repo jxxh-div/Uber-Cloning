@@ -1,7 +1,7 @@
-import { GraphQLSchema } from 'graphql';
-import { makeExecutableSchema } from 'graphql-tools';
-import path from 'path';
-import { fileLoader, mergeResolvers, mergeTypes } from 'merge-graphql-schemas';
+import { GraphQLSchema } from "graphql";
+import { makeExecutableSchema } from "graphql-tools";
+import path from "path";
+import { fileLoader, mergeResolvers, mergeTypes } from "merge-graphql-schemas";
 
 const allTypes: GraphQLSchema[] = fileLoader(
     path.join(__dirname, "./api/**/*.graphql")
